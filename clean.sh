@@ -1,4 +1,6 @@
 #!/bin/bash
 
-docker kill $(docker ps -q)
-docker rm $(docker ps -a -q)
+d_1=$(docker ps -q)
+d_2=$(docker ps -a -q)
+docker kill $d_1
+docker rm $d_2
